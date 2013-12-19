@@ -18,11 +18,11 @@ Once you installed run the following to install help tags. This will generate do
 
 If this doesn't work then add the following to your .vimrc
 
-    set runtimepath^=~/.vim/bundle/newpluginname.vim
+    set runtimepath^=~/.vim/bundle/newpluginname
 
 Then run this in vim
 
-    :helptags ~/.vim/bundle/newpluginname.vim/doc
+    :helptags ~/.vim/bundle/newpluginname/doc
 
 
 ## ctrlp.vim

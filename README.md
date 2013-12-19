@@ -18,3 +18,4 @@
 
 -[Yank register](./notes/Yank\ register.md)
 
+-[Vim plugins](./notes/Vim\ plugins.md)
