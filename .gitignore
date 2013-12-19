@@ -38,4 +38,5 @@ ehthumbs.db
 Thumbs.db
 
 # other files
-.swp
+*.swp
+*.swo
