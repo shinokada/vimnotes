@@ -6,79 +6,129 @@
 
 ## My vimrc
 
-    set nocompatible " Turn off vi compatibility
+```
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-    " for pathogen
-    execute pathogen#infect()
-    
-    " for pathogen to turn syntax on
-    syntax on
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-    " for pathogen, filetype plugin indent on
-    filetype plugin on
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-    " Use zsh for bash
-    set shell=/bin/zsh
 
-    " tab setting
-    set noeb vb t_vb=
-    set expandtab
-    set shiftwidth=2
-    set softtabstop=2
+" My Bundles here:
 
-    " for UltiSnips
-    let g:UltiSnipsSnippetsDir ="/Users/teacher/.vim/bundle/ultisnips-master/UltiSnips"
-    let g:UltiSnipsEditSplit = "vertical" 
-    let g:UltiSnipsListSnippets = "<C-tab>"
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tpope/vim-fugitive' 
+NeoBundle 'gregsexton/gitv'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'Trevoke/ultisnips-rspec'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'suan/vim-instant-markdown'
+ 
+ filetype plugin indent on     " Required!
+ "
+ " Brief help
+ " :NeoBundleList          - list configured bundles
+ " :NeoBundleInstall(!)    - install(update) bundles
+ " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
-    " NERDTree, Use F3 for toggle NERDTree
-    nmap <silent> <F3> :NERDTreeToggle<CR>
+ " Installation check.
+ NeoBundleCheck
 
-    " for backspace key to be used
-    :set backspace=2
+" to turn syntax on
+syntax on
 
-    " For mouse click in NERDTree
-    :set mouse=a
-    let g:NERDTreeMouseMode=3 
+" Use zsh for bash
+set shell=/bin/zsh
 
-    " Use esc to noh(nohighlight) the searched words
-    " nnoremap <esc> :noh<return><esc> " this creates a problem for down/up/right/left to insert A B C D
+" tab setting
+set noeb vb t_vb=
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
-    " Indentation
-    set smartindent
-    set autoindent
+" for UltiSnips
+let g:UltiSnipsSnippetsDir ="/Users/teacher/.vim/bundle/ultisnips-master/UltiSnips"
+let g:UltiSnipsEditSplit = "vertical" 
+let g:UltiSnipsListSnippets = "<C-tab>"
 
-    " load indent file for the current filetype
-    filetype indent on
+" NERDTree, Use F3 for toggle NERDTree
+nmap <silent> <F3> :NERDTreeToggle<CR>
 
-    " to avoid removing indent when typing #
-    :inoremap # X<BS>#
+" for backspace key to be used
+:set backspace=2
 
-    " colorscheme
-    colorscheme darkblue
+" For mouse click in NERDTree
+:set mouse=a
+let g:NERDTreeMouseMode=3 
 
-    " Adding cursor color 
-    set cursorline
-    hi Comment ctermfg=103
-    hi CursorLine term=none cterm=none ctermbg=17 guibg=236
+" Use esc to noh(nohighlight) the searched words
+" nnoremap <esc> :noh<return><esc> " this creates a problem for down/up/right/left to insert A B C D
 
-    " Adding highlight for search
-    set hlsearch
+" Indentation
+set autoindent
 
-    " set line numbers
-    set number
+" load indent file for the current filetype
+filetype indent on
 
-    " word wrapping and inserted line breakes only when Enter key is hit
-    set wrap
-    set linebreak
-    set nolist  " list disables linebreak
-    set textwidth=0
-    set wrapmargin=0
+" to avoid removing indent when typing #
+:inoremap # X<BS>#
 
-    " status settings
-    set cmdheight=1
-    set laststatus=2
-    set statusline=%<%F\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ %c%V%8P
+" colorscheme
+" colorscheme darkblue
 
-    " ctrlp.vim 
-    set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Adding cursor color 
+set cursorline
+hi Comment ctermfg=103
+hi CursorLine term=none cterm=none ctermbg=17 guibg=236
+
+" Adding highlight for search
+set hlsearch
+
+" set line numbers
+set number
+
+" word wrapping and inserted line breakes only when Enter key is hit
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set textwidth=0
+set wrapmargin=0
+
+" this auto-reload .vimrc when 
+augroup myvimrchooks
+    au!
+    autocmd bufwritepost .vimrc source ~/.vimrc
+augroup END
+
+" for printing to html
+" not printing number lines
+:let g:html_number_lines = 0
+
+" For spell checking 
+set spelllang=en_us
+
+" for itchyne/lightline
+if !has('gui_running')
+  set t_Co=256
+endif
+set laststatus=2
+
+let g:Powerline_symbols = 'fancy'
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
+```
