@@ -5,5 +5,5 @@
 If you are using iTerm2 and having a problem like the following image, then you need to go to iTerm > Preferences > Profiles > Text and untick Double-Width Characters.
 
 
-![sample image](https://raw.github.com/wiki/shinokada/vimnotes/images/someimage.png)
+![sample image](https://raw.github.com/wiki/shinokada/vimnotes/images/vimnote1.png)
 

@@ -21,3 +21,5 @@
 -[Vim plugins](./notes/Vim\ plugins.md)
 
 -[Vim plugin manager](./notes/Vim\ plugin\ manager.md)
+
+-[lightline](./notes/lightline.md)
