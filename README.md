@@ -19,3 +19,5 @@
 -[Yank register](./notes/Yank\ register.md)
 
 -[Vim plugins](./notes/Vim\ plugins.md)
+
+-[Vim plugin manager](./notes/Vim\ plugin\ manager.md)
