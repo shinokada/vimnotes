@@ -43,10 +43,20 @@ Add this to your .vimrc
 
 Or add the following to your .vimrc to auto-load
 
+ex1
+
     augroup myvimrchooks
         au!
         autocmd bufwritepost .vimrc source ~/.vimrc
     augroup END
+
+ex2 [Auto-Reload Your Vimrc](http://www.bestofvim.com/tip/auto-reload-your-vimrc/)
+
+    augroup reload_vimrc " {
+        autocmd!
+        autocmd BufWritePost $MYVIMRC source $MYVIMRC
+    augroup END " }
+
 
 ## No highlight after search
 After a search words are hightlighted. but using `:noh` or `:nohl` hightlight will be disabled. If you want it back then type `n`.
