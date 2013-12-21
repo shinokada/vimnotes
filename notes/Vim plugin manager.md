@@ -148,6 +148,6 @@ I changed my .vimrc accordingly. [my latest .vimrc](https://github.com/shinokada
 
 [Read SHOUGO's blog](http://vinarian.blogspot.jp/)
 
-[Read SHOUGO's slides](http://goo.gl/80BNbA)
+[Read SHOUGO's slides](http://www.slideshare.net/Shougo/presentations)
 
 
