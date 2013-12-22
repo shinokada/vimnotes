@@ -32,7 +32,11 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'suan/vim-instant-markdown'
- 
+NeoBundle 'shinokada/autoswap_mac'
+NeoBundle 'shinokada/listtrans.vim'
+NeoBundle 'shinokada/SWTC.vim'
+NeoBundle 'shinokada/dragvisuals.vim'
+
  filetype plugin indent on     " Required!
  "
  " Brief help
@@ -47,7 +51,9 @@ NeoBundle 'suan/vim-instant-markdown'
 syntax on
 
 " Use zsh for bash
-set shell=/bin/zsh
+" set shell=/bin/zsh
+" for vim-instant-markdown
+set shell=bash\ -i 
 
 " tab setting
 set noeb vb t_vb=
@@ -103,7 +109,7 @@ set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
 
-" this auto-reload .vimrc when 
+" this auto-reload .vimrc when saved
 augroup myvimrchooks
     au!
     autocmd bufwritepost .vimrc source ~/.vimrc
@@ -131,4 +137,56 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
+
+"==========[ Damian Conway OSCON 2013: More Instantly Better Vim"]============
+
+"====[ Make the 81st column stand out ]====================
+
+    " just the 81st column of wide lines...
+    highlight ColorColumn ctermbg=magenta
+    call matchadd('ColorColumn', '\%81v', 100)
+
+
+"====[ Make tabs, trailing whitespace, and non-breaking spaces visible ]======
+
+    exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+    set list
+
+
+"====[ Swap : and ; to make colon commands easier to type ]======
+
+"    nnoremap  ;  :
+"    nnoremap  :  ;
+
+
+"====[ Always turn on syntax highlighting for diffs ]=========================
+
+    " EITHER select by the file-suffix directly...
+    augroup PatchDiffHighlight
+        autocmd!
+        autocmd BufEnter  *.patch,*.rej,*.diff   syntax enable
+    augroup END
+
+
+
+"====[ autoswap_mac.vim ]============
+
+set title titlestring=
+
+"====[ listtrans.vim ]==========
+
+nmap  ;l   :call ListTrans_toggle_format()<CR>
+vmap  ;l   :call ListTrans_toggle_format('visual')<CR>
+
+"====[ dragvisulas.vim ]=========
+
+runtime plugin/dragvisuals.vim
+
+vmap  <expr>  h        DVB_Drag('left')
+vmap  <expr>  l        DVB_Drag('right')
+vmap  <expr>  j        DVB_Drag('down')
+vmap  <expr>  k        DVB_Drag('up')
+
+" Remove any introduced trailing whitespace after moving... 
+let g:DVB_TrimWS = 1
 ```
