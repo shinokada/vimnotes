@@ -22,7 +22,11 @@
 
 - [Yank register](./notes/Yank\ register.md)
 
+- [insert mode](./notes/insert\ mode.md)
+
 - [lightline](./notes/lightline.md)
+
+- [operator plus motion](./notes/operator\ plus\ motion.md)
 
 - [vimrc](./notes/vimrc.md)
 
