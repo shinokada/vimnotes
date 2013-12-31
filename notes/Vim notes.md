@@ -182,99 +182,87 @@
 
 ### Change
 
-```
-# find +
-f+
-# s deletes the character and then enters insert mode
-# enter changes space + space
-s + 
-# repeat the last search
-;
-# repat
-.
-# repeat search and replace
-;.
+    # find +
+    f+
+    # s deletes the character and then enters insert mode
+    # enter changes space + space
+    s + 
+    # repeat the last search
+    ;
+    # repat
+    .
+    # repeat search and replace
+    ;.
+    
+    # Change till ?
+    ct? # or ct<letter>
+    
+    # Change and find ?
+    cf? # or cf<letter>
 
-# Change till ?
-ct? # or ct<letter>
 
-# Change and find ?
-cf? # or cf<letter>
-
-
-```
 
 ### Search 
 
-```
-# scan line for next character 
-fx
-# scan line for previous charcter
-Fx
-# scan line for next character and move to the left of the letter x
-tx
-# scan line for previous character and move to the right of the letter x
-Tx
-# scan document for next match
-/pattern<CR>
-# scan document for previous match
-?pattern<CR>
-# will search for the word under the cursor
-* 
-# clear word(cw)(and change to insert mode) and type new word
-cwnewword<ESC>
-# next search
-n
-# repeat the change
-.
-```
+    # scan line for next character 
+    fx
+    # scan line for previous charcter
+    Fx
+    # scan line for next character and move to the left of the letter x
+    tx
+    # scan line for previous character and move to the right of the letter x
+    Tx
+    # scan document for next match
+    /pattern<CR>
+    # scan document for previous match
+    ?pattern<CR>
+    # will search for the word under the cursor
+    * 
+    # clear word(cw)(and change to insert mode) and type new word
+    cwnewword<ESC>
+    # next search
+    n
+    # repeat the change
+    .
 
 ### Repeat and reverse
 
-```
-# repeat fx, Fx, tx, Tx
-;
-# reverse fx, Fx, tx, Tx
-,
-# repeat /pattern or ?pattern
-n
-# reverse /pattern or ?pattern
-N
-```
+    # repeat fx, Fx, tx, Tx
+    ;
+    # reverse fx, Fx, tx, Tx
+    ,
+    # repeat /pattern or ?pattern
+    n
+    # reverse /pattern or ?pattern
+    N
 
 ### Substitue
 
 [Search and replace](http://vim.wikia.com/wiki/Search_and_replace)
-s[ubstitute]
 
-```
-:s/target/replacement
-# repeat substitue
-&
-# reverse it
-u
-# g-flag for global
-:s/foo/bar/g    # Change each 'foo' to 'bar' in the current line.
-:%s/foo/bar/g    # Change each 'foo' to 'bar' in all lines.
-```
+    s[ubstitute]
+    :s/target/replacement
+    # repeat substitue
+    &
+    # reverse it
+    u
+    # g-flag for global
+    :s/foo/bar/g    # Change each 'foo' to 'bar' in the current line.
+    :%s/foo/bar/g    # Change each 'foo' to 'bar' in all lines.
 
 ### Spell checking
 
-```
-:set spell spelllang=en_us
-# set locally
-:setlocal spell spelllang=en_us
-# turn off spelling
-:set nospell
-
-# find next misspelled word
-]s
-# find previous misspelled word
-[s
-
-# find alternatives
-z= # and type number
-```
+    :set spell spelllang=en_us
+    # set locally
+    :setlocal spell spelllang=en_us
+    # turn off spelling
+    :set nospell
+    # find next misspelled word
+    ]s
+    # find previous misspelled word
+    [s
+    # find alternatives
+    z= # and type number
 
 ### Adding and subtracting
 
@@ -287,14 +275,12 @@ z= # and type number
     # subtract 180
     180<C-x>
 
-
 ## Vim tabs
 
     # opening vim with multiple files
     vim -p file1 file2
     # toggle between files
     gt # gT
-
 
 ## Adding comment outs
 
@@ -303,7 +289,7 @@ z= # and type number
 
 
 ## Yank and paste
-    
+
     # yank all lines
     :%y+
     # paste
@@ -312,25 +298,25 @@ z= # and type number
 
 ## Using terminal in vim
 
-Hit <kbd>ctrl-z</kbd> to go to terminal. Type <kbd>fg</kbd> to go back to vim.
- 
+    Hit <kbd>ctrl-z</kbd> to go to terminal. Type <kbd>fg</kbd> to go back to vim.
+
 
 ## Deleting the first 2 spaces for multiple lines
 
-```
 # Remove the first 2 characters of every line:
 
-:%normal 2x
+    :%normal 2x
+    
 
 # Remove first 2 characters of every line, only if they're spaces:
 
-:%s/^  # Note: there are two spaces after ^. 
+    :%s/^  # Note: there are two spaces after ^. 
+    
+    # Move indentation to left for every line:
+    
+    :%normal <<
 
-# Move indentation to left for every line:
 
-:%normal <<
-
-```
 ## Yank
 
 [Replace a word with yanked text](http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text)
@@ -338,12 +324,7 @@ Hit <kbd>ctrl-z</kbd> to go to terminal. Type <kbd>fg</kbd> to go back to vim.
 [Vimの使い方](http://www15.ocn.ne.jp/~tusr/vim/vim_text1.html)
 
 
-```
-yiw # yank inner word
-
-
-```
- 
+    yiw # yank inner word
 
 ## Vim’s terminology
 
@@ -354,35 +335,34 @@ delete(and kepp it in a register) = cut
 
 
 ## Visual mode
+
 [Vim 101 visual mode](http://usevim.com/2012/05/11/visual)
 
 [vimdoc visual](http://vimdoc.sourceforge.net/htmldoc/visual.html)
 
-```
-v # per character
-V # linewise
-<C-v) # blockwise
+    v # per character
+    V # linewise
+    <C-v) # blockwise
+    
+    # select4 lines above
+    4k
+    
+    # select 3 lines below
+    3j
+    
+    # select 2 words
+    2w
+    
+    # go back to the previous visual mode
+    gv
+    
+    # go back to the other end
+    o # or O
+    
+    # operators help
+    :h visual-operators
 
-# select4 lines above
-4k
 
-# select 3 lines below
-3j
-
-# select 2 words
-2w
-
-# go back to the previous visual mode
-gv
-
-# go back to the other end
-o # or O
-
-# operators help
-:h visual-operators
-
-
-```
 
 ## Increasing and Decreasing numbers
 

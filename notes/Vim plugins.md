@@ -1,6 +1,9 @@
 # Vim plugins
 
 ## Using Vim-pathogen for vim-plugins
+
+**I am using Neobundle now.**
+
 [Vim-pathogen](https://github.com/tpope/vim-pathogen)
 
 Installing a plugin
@@ -43,7 +46,42 @@ This is similar to NERDTree but it opens multiple files at once and create new f
     :h ctrlp-input-format
     # and read f)
 
+## Supertab
+[maketecheasier](http://www.maketecheasier.com/8-vim-plugins-to-enhance-your-productivity/)
 
+[Github repo](https://github.com/ervandew/supertab)
+
+## Surround
+[Github repo](https://github.com/tpope/vim-surround)
+
+## Vim-dict
+[Github repo](https://github.com/szw/vim-dict)
+
+## notes.vim
+[peterodding](http://peterodding.com/code/vim/notes/)
+
+[Github repo](https://github.com/xolox/vim-notes)
+
+## TwitVim
+[Githup repo](https://github.com/vim-scripts/TwitVim)
+
+Use TinyURL for URL shortner.
+
+The following are added to .vimrc.
+
+    """ twitvim
+    nnoremap ,tp :PosttoTwitter<CR>
+    nnoremap ,tf :FriendsTwitter<CR>
+    nnoremap ,tu :UserTwitter<CR>
+    nnoremap ,tr :RepliesTwitter<CR>
+    nnoremap ,tn :NextTwitter<CR>
+    autocmd FileType twitvim call s:twitvim_my_settings()
+    function! s:twitvim_my_settings()
+      set nowrap
+    endfunction
+
+    " twitvim
+    let twitvim_count = 50
 
 
     
