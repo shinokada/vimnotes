@@ -8,6 +8,8 @@
 
 - [Vim notes](./notes/Vim\ notes.md)
 
+- [Vim notes2](./notes/Vim\ notes2.md)
+
 - [Vim plugin NERDTree](./notes/Vim\ plugin\ NERDTree.md)
 
 - [Vim plugin manager](./notes/Vim\ plugin\ manager.md)
@@ -27,6 +29,8 @@
 - [lightline](./notes/lightline.md)
 
 - [operator plus motion](./notes/operator\ plus\ motion.md)
+
+- [vim-fugitive](./notes/vim-fugitive.md)
 
 - [vimrc](./notes/vimrc.md)
 
