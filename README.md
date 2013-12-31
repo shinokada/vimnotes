@@ -34,6 +34,7 @@
 
 - [vimrc](./notes/vimrc.md)
 
+- [TwitVim](./notes/twitvim.md)
 
 
 
