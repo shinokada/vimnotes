@@ -81,8 +81,8 @@ The `.` command will work with `ds`, `cs`, and `yss` if you install
 [Github repo](https://github.com/szw/vim-dict)
 
 
-Usage
------
+### Usage
+
 
 To lookup a word (or words) in the dictionary use `Dict` command:
 
@@ -102,42 +102,37 @@ The `:Dict` command will open a preview window. To close that window you may run
 `q` if the Dict window is the active one.
 
 
-Configuration
--------------
+### Configuration
 
 There are just a few global variables (options) you may set in the *.vimrc* file.
 
 * `g:dict_hosts`
 
-  The most important one is a list `g:dict_hosts` mentioned earlier. It combines hosts/databases used by
-  **vim-dict**. The list entries are lists themselves and share the following format:
+The most important one is a list `g:dict_hosts` mentioned earlier. It combines hosts/databases used by **vim-dict**. The list entries are lists themselves and share the following format:
 
-        ["host_name", ["database1", "database2", ...]]
+    ["host_name", ["database1", "database2", ...]]
 
-  The sample extract from someone's  *~/.vimrc* file could look like this:
+The sample extract from someone's  *~/.vimrc* file could look like this:
 
-        let g:dict_hosts = [
-            \["dict.org", ["all"]],
-            \["dict.mova.org", ["slovnyk_en-pl", "slovnyk_pl-en"]]
-        \]
+    let g:dict_hosts = [
+    \["dict.org", ["all"]],
+    \["dict.mova.org", ["slovnyk_en-pl", "slovnyk_pl-en"]]
+    \]
 
-  Moreover **vim-dict** can help you figure out what databases are available on your servers. There is
-  a special command for this:
+Moreover **vim-dict** can help you figure out what databases are available on your servers. There is a special command for this:
 
-        :DictShowDb
+    :DictShowDb
 
-  You can even open your *.vimrc* and provide some host urls only:
+You can even open your *.vimrc* and provide some host urls only:
 
-        let g:dict_hosts = [
-            \["dict.org", []],
-            \["dict.mova.org", []]
-        \]
+    let g:dict_hosts = [
+      \["dict.org", []],
+        \["dict.mova.org", []]
+    \]
 
-  Then save and reload *.vimrc*, perform `DictShowDb` and yank-paste the databases you want :).
+Then save and reload *.vimrc*, perform `DictShowDb` and yank-paste the databases you want :).
 
-  The list of DICT servers can be found on the Internet, e.g.
-  [here](http://luetzschena-stahmeln.de/dictd/index.php).
-
+The list of DICT servers can be found on the Internet, e.g.[here](http://luetzschena-stahmeln.de/dictd/index.php).
 
 
 ## notes.vim
@@ -145,27 +140,14 @@ There are just a few global variables (options) you may set in the *.vimrc* file
 
 [Github repo](https://github.com/xolox/vim-notes)
 
+[My notes on notes.vim](https://github.com/shinokada/vimnotes/blob/master/notes/notesvim.md)
+
+
 ## TwitVim
 [Githup repo](https://github.com/vim-scripts/TwitVim)
 
 Use TinyURL for URL shortner.
-
-The following are added to .vimrc.
-
-    """ twitvim
-    nnoremap ,tp :PosttoTwitter<CR>
-    nnoremap ,tf :FriendsTwitter<CR>
-    nnoremap ,tu :UserTwitter<CR>
-    nnoremap ,tr :RepliesTwitter<CR>
-    nnoremap ,tn :NextTwitter<CR>
-    autocmd FileType twitvim call s:twitvim_my_settings()
-    function! s:twitvim_my_settings()
-      set nowrap
-    endfunction
-
-    " twitvim
-    let twitvim_count = 50
-
+[My notes on TwitVim](https://github.com/shinokada/vimnotes/blob/master/notes/Twitvim.md)
 
     
 ##<del> Using Vim-pathogen for vim-plugins</del>
