@@ -30,6 +30,8 @@
 
 - [lightline](./notes/lightline.md)
 
+- [notes.vim](./notes/notesvim.md)
+
 - [operator plus motion](./notes/operator\ plus\ motion.md)
 
 - [vim-fugitive](./notes/vim-fugitive.md)
