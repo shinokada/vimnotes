@@ -1,5 +1,9 @@
 # Collection of personal vim notes
 
+- [Practical Vim notes](./notes/Practical\ Vim\ notes.md)
+
+- [Register](./notes/Register.md)
+
 - [Star Wars Intro](./notes/Star\ Wars\ Intro.md)
 
 - [TwitVim](./notes/Twitvim.md)
@@ -29,6 +33,8 @@
 - [insert mode](./notes/insert\ mode.md)
 
 - [lightline](./notes/lightline.md)
+
+- [macro](./notes/macro.md)
 
 - [notes.vim](./notes/notesvim.md)
 
