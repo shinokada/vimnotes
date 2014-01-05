@@ -33,6 +33,8 @@ If you are using w3m, [read this post](http://d.hatena.ne.jp/unarist/20110323/13
 
 ## Usage: 
 
+Start vim and use :FriendsTwitter or the shortcut `,tf` as above to start TwitVim.
+
     :PosttoTwitter # This command will prompt you for a message to send to Twitter. 
     :CPosttoTwitter # This command posts the current line in the current buffer to Twitter. 
     :BPosttoTwitter # This command posts the current buffer to Twitter. 
