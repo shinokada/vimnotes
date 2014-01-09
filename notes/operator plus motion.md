@@ -38,6 +38,7 @@ This comments and uncomments as well. Use `.` for repeating.
 
 
 ## kana/vim-textobj-entire
+Read about [indentation](./indent.md) without plugins.
 
     gg=G # autoindent the entire file
     # if you have vim-textobj-entire
