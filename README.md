@@ -30,6 +30,10 @@
 
 - [Yank register](./notes/Yank\ register.md)
 
+- [grep](./notes/grep.md)
+
+- [indent](./notes/indent.md)
+
 - [insert mode](./notes/insert\ mode.md)
 
 - [lightline](./notes/lightline.md)
