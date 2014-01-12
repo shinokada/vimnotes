@@ -1,4 +1,4 @@
-# Vim note 2
+# Spelling and autocompletion
 
 ## File Name Autocompletion
 
@@ -34,5 +34,6 @@
     ]s # or [s
     # get a list of suggestion
     z=
-
+    # add to your dictionary
+    zg
 
