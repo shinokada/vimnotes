@@ -23,7 +23,16 @@
     
     # Close a tab
     :tabc
-    
+
+    # close all tabs
+    :qa
+
+    # close all tabs with saving
+    :wqa # or :tabo or :xa but don't use it :x
+
+    # force to close all without saving
+    :qa!
+
     # Edit a file in a new buffer
     :e filename 
     

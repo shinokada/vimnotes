@@ -10,7 +10,8 @@ git commands which generate little or no output.
 git log is better in the shell. :Git checkout -b experimental is good to use vim-fugitive.
 
 ## Git and fugitive commands
-
+    :help cmdline-special
+    :help :Gread
 
 | git                  | fugitive       | action                                                      |
 |----------------------|----------------|-------------------------------------------------------------|
@@ -20,7 +21,7 @@ git log is better in the shell. :Git checkout -b experimental is good to use vim
 |:Git mv % target_path |:Gmove          |Rename the current file and the corresponding Vim buffer     |
 
 
-Note:
+## Gremove and Gmove
 
 :Gremove does a git rm on a file and simultaneously deletes the buffer.
 
@@ -32,6 +33,16 @@ Note:
     git mv original/path destination/path
     :bwipeout original/path
     :edit destination/path
+
+`:Gmove target_path`, destination is relative to the path of the current file.
+
+`:Gmove /target_path` destination is relative to the root of the git repository.
+
+## Gcommit
+
+After `Gcommit`, enter commit message without `"`.
+
+For Autocomplete use `Ctrl-n`.
 
 
 ## Alias in .gitconfig works with :Git 
