@@ -42,6 +42,8 @@
 
 - [vim-instant-markdown](./notes/vim-instant-markdown.md)
 
+- [vim-online-thesaurus](./notes/vim-online-thesaurus.md)
+
 - [vimrc](./notes/vimrc.md)
 
 - [visual mode](./notes/visual\ mode.md)
