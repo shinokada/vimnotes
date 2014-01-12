@@ -1,5 +1,15 @@
 # Yank registered
 
+## Yank
+
+[Replace a word with yanked text](http://vim.wikia.com/wiki/Replace_a_word_with_yanked_text)
+
+[Vimの使い方](http://www15.ocn.ne.jp/~tusr/vim/vim_text1.html)
+
+
+    yiw # yank inner word
+
+
 ## :reg " and :reg 0
 When you use `x`, `s`, `d{motion}`, `c{motion}`, `y{motion}`, you are cutting to the default register.
 

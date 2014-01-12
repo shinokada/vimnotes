@@ -14,8 +14,6 @@
 
 - [Vim notes](./notes/Vim\ notes.md)
 
-- [Vim notes2](./notes/Vim\ notes2.md)
-
 - [Vim plugin NERDTree](./notes/Vim\ plugin\ NERDTree.md)
 
 - [Vim plugin manager](./notes/Vim\ plugin\ manager.md)
@@ -48,6 +46,8 @@
 
 - [vimrc](./notes/vimrc.md)
 
+- [visual mode](./notes/visual\ mode.md)
 
+- [wordcompletion](./notes/wordcompletion.md)
 
 
