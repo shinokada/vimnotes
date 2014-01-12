@@ -24,7 +24,7 @@
 
 - [register](./notes/register.md)
 
-- [spelling and autocompletion]((./notes/spelling\ and\ autocompletion.md)
+- [spelling and autocompletion](./notes/spelling\ and\ autocompletion.md)
 
 - [Star Wars Intro](./notes/Star\ Wars\ Intro.md)
 
