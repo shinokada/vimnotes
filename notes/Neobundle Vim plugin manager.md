@@ -1,4 +1,4 @@
-# Vim plugin manager
+# Neobundle, Vim plugin manager
 
 I used [vim-pathogen](https://github.com/tpope/vim-pathogen) for a while and moved to  [neobundle.vim](https://github.com/Shougo/neobundle.vim). 
 
