@@ -1,5 +1,9 @@
 # Collection of personal vim notes
 
+- [compound command](./notes/compound\ command.md)
+
+- [cursor](./notes/cursor.md)
+
 - [grep](./notes/grep.md)
 
 - [indent](./notes/indent.md)
