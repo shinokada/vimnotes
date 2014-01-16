@@ -20,7 +20,17 @@
 
     # Open files in tabs
     vim -p file1 file2 file3
-    
+
+    # Open all files in a directory
+    vim -p *.txt
+
+    # Once vim is open use this to open all files
+    :tab all
+
+    # Open all the md files in the current directory in individual tabs
+    :args *.md
+    :tab all
+
     # Close a tab
     :tabc
 
@@ -32,6 +42,23 @@
 
     # force to close all without saving
     :qa!
+    
+    # change the tab position to the third
+    :tabm 2 # 0 is the first
+    {i}gt # to to tab in postion i
+
+    # move the current tab to the first
+    :tabm 0
+
+    # move to the last tab
+    :tabm
+
+    # go to the next tab
+    :tabn
+
+    # go to the previous tab
+    :tabn
+
 
     # Edit a file in a new buffer
     :e filename 

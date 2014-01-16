@@ -1,5 +1,11 @@
 # Spelling and autocompletion
 
+## vim-online-thesaurus
+[vim-online-thesaurus](https://github.com/beloglazov/vim-online-thesaurus)
+
+    <Local leader>K # \K
+    q # to quit
+
 ## File Name Autocompletion
 
     # insert mode
