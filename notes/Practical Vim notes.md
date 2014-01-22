@@ -26,34 +26,6 @@ Tip 16
 ## Inserting unusual characters
 Tip 18
 
-# Practical Vim notes
-
-## Ctrl-r{register}
-
-In the insert mode use this to paste content from register 0 for example
-
-    :h i_CTRL-R
-
-    <C-r>0
-
-## Delete, Yank and Put with unnamed register
-### Transposing
-
-    # transposing two characters
-    xp # to cut and paste it after the cursor since it is a character-wise register.
-
-    # transposing two lines, paste below the cursor line since it is a line-wise register.
-    ddp
-
-## Calculations 
-Tip 16
-
-    # Insert mode 
-    <C-r>6*35<CR>
-
-## Inserting unusual characters
-Tip 18
-
     # Insert mode <C-v>code
     # <C-v>065 is A
     # For hexadecial use u after <C-v>
