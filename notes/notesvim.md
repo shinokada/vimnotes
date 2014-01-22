@@ -16,6 +16,10 @@
 
     :w # :write, :update, no file name. It will use the title. 
 
+## Note directory
+
+All notes are saved in .vim/bundle/vim-notes/misc/notes/user/ directory
+
 ## Edit
 
     :Note filetitle # use tab completion

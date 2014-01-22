@@ -23,7 +23,7 @@ When you use `x`, `s`, `d{motion}`, `c{motion}`, `y{motion}`, you are cutting to
 ## Using reg 0 to paste
 
     # diw(delete inner word) will register in the default register.
-    # In order to put the yanked word, use `"0P`.
+    # In order to put the yanked word, use "0P.
     "0P
 
 ## True delete in vim, the black hole register "_
@@ -32,7 +32,7 @@ When you use `x`, `s`, `d{motion}`, `c{motion}`, `y{motion}`, you are cutting to
     # e.g. to delete a word
     "_diw
 
-By using the balck hole register `"_`, you can delete a word and you P/p to paste rather than using a regitered yank.
+By using the balck hole register `"_`, you can delete a word and P/p to paste rather than using a regitered yank.
 
     yiw
     jww
