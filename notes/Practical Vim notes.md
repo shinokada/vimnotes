@@ -31,7 +31,7 @@ Tip 18
     # For hexadecial use u after <C-v>
     # <C-v>u00bf is ¿
 
-Use `ga` to see the character code.
+Use `ga` to see the character code under cursor.
 
     <C-v>{123}       # Insert character by decimal code
     <C-v>u{1234}     # Insert character by hexadecimal code
