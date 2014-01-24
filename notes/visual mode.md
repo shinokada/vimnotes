@@ -70,22 +70,12 @@ This will change any length of words.
     # select a line and replace all characters with -
     Vr-
 
+## Append after a ragged visual block
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # change to visual-block mode and extend the selection to the end of each line by pressing $
+    <C-v>jj$
+    # append
+    A;
+    # escape
+    <Esc>
 
