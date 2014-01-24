@@ -1,5 +1,25 @@
 # Collection of personal vim notes
 
+- [NERDTree](./notes/NERDTree.md)
+
+- [Neobundle](./notes/Neobundle.md)
+
+- [Practical Vim notes](./notes/Practical\ Vim\ notes.md)
+
+- [Register](./notes/Register.md)
+
+- [Star Wars Intro](./notes/Star\ Wars\ Intro.md)
+
+- [TwitVim](./notes/Twitvim.md)
+
+- [Vim notes](./notes/Vim\ notes.md)
+
+- [Vim plugins](./notes/Vim\ plugins.md)
+
+- [Vim tips](./notes/Vim\ tips.md)
+
+- [Yank register](./notes/Yank\ register.md)
+
 - [compound command](./notes/compound\ command.md)
 
 - [cursor](./notes/cursor.md)
@@ -14,33 +34,15 @@
 
 - [macro](./notes/macro.md)
 
-- [Neobundle](./notes/Neobundle.md)
-
-- [NERDTree](./notes/NERDTree.md)
-
 - [notes.vim](./notes/notesvim.md)
 
 - [operator plus motion](./notes/operator\ plus\ motion.md)
 
-- [Practical Vim notes](./notes/Practical\ Vim\ notes.md)
-
 - [register and paste](./notes/register\ and paste.md)
-
-- [register](./notes/register.md)
 
 - [spelling and autocompletion](./notes/spelling\ and\ autocompletion.md)
 
-- [Star Wars Intro](./notes/Star\ Wars\ Intro.md)
-
-- [TwitVim](./notes/Twitvim.md)
-
 - [unimpaired](./notes/unimpaired.md)
-
-- [Vim notes](./notes/Vim\ notes.md)
-
-- [Vim plugins](./notes/Vim\ plugins.md)
-
-- [Vim tips](./notes/Vim\ tips.md)
 
 - [vim-fugitive](./notes/vim-fugitive.md)
 
@@ -50,13 +52,14 @@
 
 - [vimrc](./notes/vimrc.md)
 
+- [vimtips clone](./notes/vimtips_clone.md)
+
 - [visual mode](./notes/visual\ mode.md)
 
 - [wordcompletion](./notes/wordcompletion.md)
 
 - [working with Multiple Files](./notes/working\ with\ multiple\ files.md)
 
-- [Yank register](./notes/Yank\ register.md)
 
 
 
