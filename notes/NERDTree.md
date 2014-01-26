@@ -98,7 +98,7 @@
 
 ## Display hidden files and directory
 
-    `shift``i`
+`shift``i`
 
 ## Using a mouse
 
@@ -116,7 +116,3 @@ Add the following to your .vimrc.
     cd
     # display only your working directory
     C
-
-
-
-
