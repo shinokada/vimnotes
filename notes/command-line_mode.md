@@ -19,7 +19,7 @@ Tip 28
     # delete all lines in the file
     :%d # same as 1,$d
 
-### Substitue a word within a range of lines selected by visual selection
+### Substitute a word within a range of lines selected by visual selection
 
 `'<` is start of visual selection and `'>` is end of visual selection.
 
@@ -35,7 +35,7 @@ Tip 28
 
 Range `:{start},{end}`. For pattern `:/pattern/,/patter/d`.
 
-General form for an offset, `:{address}+n` and default `n` is 1 so you can ommit it.
+General form for an offset, `:{address}+n` and default `n` is 1 so you can omit it.
 
     :/<html>/,/<\/html>/d
     # select <html></html> block except <html> and </html> and delete
@@ -120,7 +120,7 @@ Tip 32
 
     # <C-d> to reveal a list of possible completions. 
     # use <Tab> or <S-Tab> to cycle through
-    :col<C-d>    
+    :col<C-d>
     :colorscheme <C-d>
 
 With the 'wildmenu' option enabled, Vim provides a navigable list of suggestions.
@@ -132,9 +132,9 @@ Use `<Tab>`,`<S-Tab>`, `<C-n>`, `<C-p>` or `<Right>`, `<Left>`
 ## Insert the current word at the command prompt
 Tip 33
 
-<C-r><C-w> gets the word under the cursor. Use it with help to look up the documentation `:h <C-r><C-w>`
+`<C-r><C-w>` gets the word under the cursor. Use it with help to look up the documentation `:h <C-r><C-w>`
 
-`*` command searchs for each orrurrence under cursor.
+`*` command searches for each occurrence under cursor.
 
     # select a word under cursor 'tally'
     *
@@ -145,15 +145,68 @@ Tip 33
 
 ## Recall commands from history
 
-`:` and <Up>,<Down> key show the command history.
+`:` and `<Up>`,`<Down>` key show the command history.
 
-`:h` and <Up>,<Down> key show the help history.
+`:h` and `<Up>`,`<Down>` key show the help history.
 
-`/` and <Up>,<Down> key show the search histroy.
+`/` and `<Up>`,`<Down>` key show the search history.
 
 Vim records the last 20 commands. You can change `history` number.
 
     set history=200
+
+### Command line window
+
+    # using ls
+    :!ls
+    # going back from shell to Vim
+    fg
+
+    # to display command line history
+    q:
+    # to close the command window
+    :q # or <CR>
+    # Open the command-line window with history of searches
+    q/
+    # Switch from Command-line mode to the Command-line window
+    ctrl-f
+    # combine two commands
+    :write | !ruby %
+
+You can use j, k, `:s/write/update` etc as normal Vim in `q:`. 
+
+    # use shell
+    :shell # same as <C-z>
+    # exit the shell
+    $ exit # same as fg
+    # putting Vim in the background
+    <C-z>
+    # resume Vim
+    fg
+
+## Filtering the contents of a buffer through an external command
+
+`:[range]!{filter}`
+
+`:2,$` is the range from line 2 to the end. `!sort` to use 'sort' in Vim. `-t','` tells the separator is a comma. `-k2` flag to indicate that the second field is to be used for the sort.
+
+    :2,$!sort -t',' -k2
+
+Or the cursor on line two and `!G`, Vim will prompt with `:.,$!`. and add `-t',' -k2`.
+
+    # start a shell
+    :shell
+    # execute {cmd} with the shell
+    :!{cmd}
+    # execute {cmd} in the shell and insert its standard output below the curso
+    :read!{cmd}
+    # execute {cmd} in the shell with [range] lines as standard input
+    :[range]write!{cmd}
+    Filter the secified [range] through external prgram {filter}
+    :[range]!{filter}
+
+    :shell 
+
 
 
 
