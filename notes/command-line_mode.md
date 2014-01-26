@@ -64,8 +64,8 @@ Tip 29
     # after visual selection, when you type :, '<,'> will appear
     :'<,'>t0
 
-`yyp` uses a register whereas `:t` doesn't. `:6t.` in command line is the same as 6Gyy<C-o>p in normal mode.
-<C-o> jump to older cursor position.
+`yyp` uses a register whereas `:t` doesn't. `:6t.` in command line is the same as `6Gyy<C-o>p` in normal mode.
+`<C-o>` jump to older cursor position.
 
 ## Move lines with :m
 
@@ -124,7 +124,7 @@ Tip 32
     :colorscheme <C-d>
 
 With the 'wildmenu' option enabled, Vim provides a navigable list of suggestions.
-Use <Tab>,<S-Tab>, <C-n>, <C-p> or <Right>, <Left>
+Use `<Tab>`,`<S-Tab>`, `<C-n>`, `<C-p>` or `<Right>`, `<Left>`
 
     set wildmenu
     set wildmode=full
