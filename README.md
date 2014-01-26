@@ -20,6 +20,8 @@
 
 - [Yank register](./notes/Yank\ register.md)
 
+- [command-line_mode](./notes/command-line_mode.md)
+
 - [compound command](./notes/compound\ command.md)
 
 - [cursor](./notes/cursor.md)
