@@ -4,6 +4,13 @@
 
 [NERDTree doc](https://github.com/scrooloose/nerdtree/blob/master/doc/NERD_tree.txt)
 
+## Adding a file
+
+    # bring up NERDTree filesystem menu
+    m
+    # add child node
+    a
+
 ## Quick help 
 
     NERD tree (4.2.0) quickhelp~

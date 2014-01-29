@@ -57,7 +57,7 @@
     :tabn
 
     # go to the previous tab
-    :tabn
+    :tabp
 
 
     # Edit a file in a new buffer
@@ -77,6 +77,9 @@
     
     # Move to the next tab
     gt # or gT or igt to go to i-th tab
+
+    # Move to tab 5
+    5gt
 
     # close current tab
     :tabclose
