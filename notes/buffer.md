@@ -6,7 +6,7 @@
 
 | command | action                                                                              |
 |---------|----------------------------------------------|
-|:l       | sshow the buffer list                                                               |
+|:ls      | show the buffer list                                                               |
 |:b       | nopen the next buffer in the current window (cycles from the end of the list to the beginning).|
 |:bp      | open the previous buffer in the current window (cycles from the start of the list to the end).|
 |CTRL-^   | Buffersswitch to the alternate file|
@@ -19,3 +19,12 @@
 |:e!     | Buffersrestore the original file|
 |:bd!    | Buffersforcibly remove the buffer from the buffer list, discarding any changes|
 |:q!     | Buffersforce Vim to quit, discarding changes to all modified buffers|
+
+In .vimrc setting hidden will allow you without vim errors/warnings.
+
+    set hidden
+
+The `argdo` command works best when the `hidden` setting is enabled.
+
+
+
